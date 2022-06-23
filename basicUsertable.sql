@@ -1,12 +1,12 @@
 -- USER
--- id
--- name
--- social
--- state
--- init_time
--- login_time
--- logout_time
--- save_status
+    -- id
+    -- name
+    -- social
+    -- state
+    -- init_time
+    -- login_time
+    -- logout_time
+    -- save_status
 CREATE TABLE public.user (
     id serial PRIMARY KEY,
     name VARCHAR ( 255 ),
@@ -20,4 +20,11 @@ CREATE TABLE public.user (
     save_status BOOLEAN NOT NULL
 );
 
-        
+-- basic bord
+CREATE TABLE public.bord (
+    id serial PRIMARY KEY,
+    description TEXT
+);
+
+-- 리테일 스토어 erd
+-- https://www.freeprojectz.com/entity-relationship/retail-store-management-system-er-diagram
