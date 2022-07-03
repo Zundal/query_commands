@@ -1,5 +1,9 @@
 -- https://creately.com/diagram/example/hjom4wgu2/e-commerce-erd
 -- ecomus application erd
+
+-- 디비 목 데이터 만드는 사이트
+-- https://www.mockaroo.com/
+
 CREATE TABLE customer (
     customer_id varchar(200) not null primary key ,
     first_name varchar(50),

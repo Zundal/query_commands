@@ -60,3 +60,5 @@ create table public.product (
     pro_items varchar ( 255 ),
     pro_type varchar ( 100 )
 );
+
+ㄴ디
