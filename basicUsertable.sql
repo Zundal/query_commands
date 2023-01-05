@@ -7,7 +7,7 @@
     -- login_time
     -- logout_time
     -- save_status
-CREATE TABLE public.user (
+CREATE TABLE PUBLIC.USER (
     id serial PRIMARY KEY,
     name VARCHAR ( 255 ),
     password VARCHAR ( 255 ) NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE public.user (
 );
 
 -- basic bord
-CREATE TABLE public.bord (
+CREATE TABLE PUBLIC.BOARD (
     id serial PRIMARY KEY,
     description TEXT
 );
@@ -30,29 +30,28 @@ CREATE TABLE public.bord (
 -- https://www.freeprojectz.com/entity-relationship/retail-store-management-system-er-diagram
 -- 이커머스 erd
 
-
-CREATE TABLE public.login (
+CREATE TABLE PUBLIC.LOGIN (
     login_id VARCHAR ( 100 ) PRIMARY KEY,
     login_role_id VARCHAR ( 100 ),
     login_username VARCHAR ( 100 ),
     user_password VARCHAR ( 100 )
 );
 
-create table public.roles (
+create table PUBLIC.ROLES (
     role_id varchar ( 100 ) primary key ,
     role_name varchar ( 100 ),
     role_desc varchar ( 255 )
 );
 
-create table public.payment (
-  pay_id varchar ( 100 ) primary key ,
-  pay_amt varchar ( 100 ),
-  pay_stu_id varchar ( 100 ),
-  pay_date date,
-  pay_desc varchar ( 255 )
+create table PUBLIC.PAYMENT (
+    pay_id varchar ( 100 ) primary key ,
+    pay_amt varchar ( 100 ),
+    pay_stu_id varchar ( 100 ),
+    pay_date date,
+    pay_desc varchar ( 255 )
 );
 
-create table public.product (
+create table PUBLIC.PRODUCT (
     pro_id varchar ( 100 ) primary key ,
     pro_num numeric,
     pro_cus_id varchar ( 100 ),
@@ -60,5 +59,3 @@ create table public.product (
     pro_items varchar ( 255 ),
     pro_type varchar ( 100 )
 );
-
-ㄴ디
